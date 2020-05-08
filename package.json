@@ -5,6 +5,9 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
