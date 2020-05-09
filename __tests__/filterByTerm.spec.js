@@ -44,12 +44,12 @@ describe("Filter function", () => {
         }).toThrowError(Error("searchTerm cannot be empty")); // Test empty string
     });
 
-    test("it should throw when inputArr is empty array", () => {
-        // define a empty input array
-        const input = [];
+    // test("it should throw when inputArr is empty array", () => {
+    //     // define a empty input array
+    //     const input = [];
 
-        expect(() => {
-            filterByTerm(input, "link")
-        }).toThrowError(Error("inputArr cannot be empty")); // Test empty input array
-    });
+    //     expect(() => {
+    //         filterByTerm(input, "link")
+    //     }).toThrowError(Error("inputArr cannot be empty")); // Test empty input array
+    // });
 });
