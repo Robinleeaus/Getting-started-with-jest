@@ -31,18 +31,18 @@ describe("Filter function", () => {
         expect(filterByTerm(input, "uRL")).toEqual(output); // Test "uRL"
     });
 
-    // test("it should throw when searchTerm is empty string", () => {
-    //     // define a simple input, an array of objects
-    //     const input = [
-    //         { id: 1, url: "https://www.url1.dev" },
-    //         { id: 2, url: "https://www.url2.dev" },
-    //         { id: 3, url: "https://www.link3.dev" }
-    //     ];
+    test("it should throw when searchTerm is empty string", () => {
+        // define a simple input, an array of objects
+        const input = [
+            { id: 1, url: "https://www.url1.dev" },
+            { id: 2, url: "https://www.url2.dev" },
+            { id: 3, url: "https://www.link3.dev" }
+        ];
 
-    //     expect(() => {
-    //         filterByTerm(input, "")
-    //     }).toThrowError(Error("searchTerm cannot be empty")); // Test empty string
-    // });
+        // expect(() => {
+        //     filterByTerm(input, "")
+        // }).toThrowError(Error("searchTerm cannot be empty")); // Test empty string
+    });
 
     // test("it should throw when inputArr is empty array", () => {
     //     // define a empty input array
