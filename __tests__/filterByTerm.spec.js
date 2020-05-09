@@ -39,13 +39,9 @@ describe("Filter function", () => {
             { id: 3, url: "https://www.link3.dev" }
         ];
 
-        // expect(() => {
-        //     filterByTerm(input, "")
-        // }).toThrowError(Error("searchTerm cannot be empty")); // Test empty string
-
-        expect(
+        expect(() => {
             filterByTerm(input, "")
-        ).toThrowError(Error("searchTerm cannot be empty")); // Test empty string
+        }).toThrowError(Error("searchTerm cannot be empty")); // Test empty string
     });
 
     test("it should throw when inputArr is empty array", () => {
